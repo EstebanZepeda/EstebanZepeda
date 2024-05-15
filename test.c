@@ -23,3 +23,12 @@ void crearLista(){
   lista->anterior = NULL;
   lista->siguiente = NULL;
 }
+
+
+void crearEnteroLargo(){
+  signo = char* malloc(sizeof(char));
+  tamañoDigitos = unsigned short* malloc(sizeof(unsigned short));
+  lista = struct* malloc(sizeof(*lista));
+}
+
+
