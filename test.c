@@ -1,27 +1,31 @@
 #include <stdio.h>
+#include <stdlib.h>
+
+
 
 typedef struct EnteroLargo{
  char signo;
  unsigned short tamañoDigitos;
- struct *lista; 
+ struct EnteroLargo *lista; 
 
 }EnteroLargo;
 
 
 
 
-typedef struct lista{
+typedef struct listaEnlazada{
 
-struct *anterior
+struct listaEnlazada *anterior
 char Digito;
-struct *siguiente
-}lista;
+struct listaEnlazada *siguiente
+}listaEnlazada;
 
 
 void crearLista(){
-  lista = char* malloc(sizeof(char));
-  lista->anterior = NULL;
-  lista->siguiente = NULL;
+  listaEnlazada = char* malloc(sizeof(char));
+  listaEnlazada->anterior->anterior = listaEnlazada->anterior->anterior;
+  listaEnlazada->siguiente = NULL;
+
 }
 
 
@@ -32,3 +36,9 @@ void crearEnteroLargo(){
 }
 
 
+
+
+
+EnteroLargo *creaEnteroLargoDesdeStr(){
+
+  }
